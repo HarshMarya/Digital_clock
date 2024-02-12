@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        font-family: "Orbitron", sans-serif;
+        background-color: #000;
+      }
+
+      .display{
+        font-size: 8vw;
+        color: #17D4FE;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display"></div>
+    </div>
+  </body>
+  <script>
+    function showtime() {
+      let display_time = document.querySelector(".display");
+      let nd = new Date();
+      let hour = nd.getHours(); //0-23
+      let min = nd.getMinutes(); //0-59
+      let sec = nd.getSeconds(); //0-59
+      let am_pm = "AM"
+
+      if (hour >= 12) {
+        hour = hour - 12;
+        am_pm = "PM"
+      }
+
+      hour = hour < 10 ? `0${hour}` : hour;
+      min = min < 10 ? `0${min}` : min;
+      sec = sec < 10 ? `0${sec}` : sec;
+
+      display_time.innerHTML = `${hour} : ${min} : ${sec} : ${am_pm}`;
+      
+    // display_time.innerHTML = nd.toLocaleTimeString()
+    }
+
+    setInterval(showtime, 1000);
+  </script>
+</html>
