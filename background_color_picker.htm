@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-color-picker</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            margin: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Color Switcher</h1>
+    <div class="container">
+      <div style="background-color: crimson;" class="box"></div>
+      <div style="background-color: yellow;" class="box"></div>
+      <div style="background-color: green;" class="box"></div>
+      <div style="background-color: orange;" class="box"></div>
+      <div style="background-color: #fff;" class="box"></div>
+      <div style="background-color: #111;" class="box"></div>
+      <div style="background-color: #333;" class="box"></div>
+    </div>
+    <h2>Click any box to change background color of this page</h2>
+  </body>
+  <script>
+    let boxes = document.querySelectorAll('.box')
+    let body = document.getElementsByTagName("body")[0];
+
+    boxes.forEach((box)=>{
+        box.addEventListener('click', ()=>{
+            let box_color = box.getAttribute('style');
+            let bg_color = body.setAttribute("style" , box_color)
+            console.log(bg_color);
+        })
+    })
+  </script>
+</html>
