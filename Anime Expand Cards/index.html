@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1></h1>
+    <div class="container">
+      <div class="panel" style="background-image: url(img/saturo\ gojo.jpg)">
+        <h2>saturo gojo</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/itadorixsukuna.jpg)">
+        <h2>itadori x sukuna</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/maki-zenin.jpg)">
+        <h2>maki-zenin</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/sukuna\.jpg)">
+        <h2>sukuna</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/fushiguro.jpg)">
+        <h2>fushiguro</h2>
+      </div>
+      <div class="panel" style="background-image: url(img/nobara.jpg)">
+        <h2>nobara</h2>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const panels = document.querySelectorAll(".panel");
+
+      panels.forEach((panel) => {
+        panel.addEventListener("click", function () {
+          // Remove 'active' class from all panel
+          panels.forEach((panel) => {
+            panel.classList.remove("active");
+          });
+
+          // Add 'active' class to the clicked item
+          this.classList.add("active");
+        });
+      });
+    });
+  </script>
+</html>
