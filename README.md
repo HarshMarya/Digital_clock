@@ -4,5 +4,7 @@ Digital clock with the help of JavaScript and CSS
 background-color changer with the help of JavaScript and CSS
 # BMI Calculator
 BMI calculator with the help of HTML CSS and javaScript
-# Anime SlideShow
+# Anime card SlideShow
 anime slideshow using html css and javascript
+# Progress Steps
+progress steps with the help of html css and javascript
