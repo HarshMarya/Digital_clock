@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+        font-family: "Orbitron", sans-serif;
+        color: #fff;
+      }
+
+      .container {
+        background-color: #212121;
+        padding: 50px;
+        box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.8);
+        text-align: center;
+      }
+      .space {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+      }
+      .container h2 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .form label {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      input {
+        height: 2rem;
+        margin: 20px;
+        color: #212121;
+      }
+      button[type="submit"] {
+        color: #212121;
+        font-size: 1.2rem;
+        height: 2.5rem;
+        border: none;
+        font-weight: bolder;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #fff;
+        font-family: "Orbitron", sans-serif;
+        margin: 10px 20px;
+      }
+      .inputField {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 5px 0;
+        font-weight: 600;
+      }
+      .prev-result {
+        background-color: #a9a8a8;
+        padding: 8px 10px;
+        margin-left: 5px;
+      }
+      .add-btn {
+        text-align: center;
+        background-color: #fff;
+        color: #212121;
+        font-size: 1.5rem;
+        padding: 10px 10px;
+        cursor: pointer;
+        border: none;
+        transition: transform 0.5s;
+      }
+      .add-btn:hover {
+        box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.7);
+        transform: translateY(-5px);
+      }
+      .result-container {
+        text-align: right;
+      }
