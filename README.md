@@ -12,4 +12,5 @@ progress steps with the help of html css and javascript
 guess number game is a game where we get 10 chances to match the computer output is you will match the same number then you'll win, otherwise, you can restart the game I make this mini project with the help of html css and javascript
 # split landing page
 on the mouse enter or mouse leave the webpage expend or minimize
-
+# Calculator
+using html css and javascript
