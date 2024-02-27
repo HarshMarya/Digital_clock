@@ -1,0 +1,43 @@
+.tx-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.btn{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+.btn-symbols{
+    background-color: #ff9f0a;
+}
+.btn-gray{
+    margin-top: 20px;
+    background-color: #a5a5a5;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-zero{
+    width: 100px;
+    height: 50px;
+    /* border-right-radius: 50%; */
+    /* border-bottom-right-radius: 50%; */
+}
+.heading{
+    font-size: 2.8rem;
+    color: white;
+}
