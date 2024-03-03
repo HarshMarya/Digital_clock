@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400&family=Mulish:wght@300;400;700&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@300&family=Pacifico&family=Poppins:wght@300;400;700;900&family=Roboto:wght@300;400;700&family=Satisfy&family=Young+Serif&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #3497DA;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    height: 3rem;
+    background-color: #fff;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.input-length{
+    width: 50px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    background-color: #2980BB;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 3px #176B87;
+}
+
+.checkbox{
+    width: 30px;
+    height: 15px;
+    accent-color:#176B87;
+}
+
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.btn{
+    margin: auto;
+    width: 90%;
+    background-color: #176B87;
+    border: none;
+    height: 45px;
+    margin-bottom: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0d536a;
+    font-size: 0.9rem;
+}
+
