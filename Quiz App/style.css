@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400&family=Mulish:wght@300;400;700&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@300&family=Pacifico&family=Poppins:wght@300;400;700;900&family=Roboto:wght@300;400;700&family=Satisfy&family=Young+Serif&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C6D2E3;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 6px;
+    width: 60%;
+    max-width: 480px;
+    min-width: 380px;
+}
+
+.box .question{
+    text-align: center;
+    padding: 0 20px;
+}
+.container .btn{
+    width: 100%;
+    background-color: #8748A4;
+    outline: none;
+    border: none;
+    height: 3rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.container .btn:hover{
+    background-color: #8131a6;
+}
+
+.box ul li{
+    list-style-type: circle;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.box ul li:hover{
+    color: #4e4e4e;
+}
+
+.box .answers{
+    display: flex;
+    flex-direction: column;
+}
+
+.box .answers .answer_box{
+    padding: 10px 20px;
+}
+
+.result{
+    padding-left: 10px;
+    text-align: center;
+}
