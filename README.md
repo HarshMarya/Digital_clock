@@ -16,3 +16,5 @@ on the mouse enter or mouse leave the webpage expend or minimize
 using html css and javascript
 # Password Generator
 this app will generate a random password according to your requirement and this is made with simple HTML, css and javaScript
+# Quiz App
+this app is like an Q&A, and on the end you will get the final score
